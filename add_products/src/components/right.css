@@ -1,0 +1,58 @@
+button{
+    border-radius: 8px!important;
+  }
+.input{
+    height: 190px;
+  }
+
+  .product-description{
+    line-height: normal;
+  }
+  .img-icon{
+  font-size: 6rem;
+  }
+  input{
+    border: 0;
+    border-radius: 8px!important;
+    background-color: #e4e4e4!important;
+  }
+  .button-green{
+    background: #e4e4e4;
+    padding: 5px 285px 0px 5px;
+    border-radius: 8px;
+  }
+  button{
+    border-radius: 8px!important;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .input{
+      margin-left: 10px;
+    }
+    .button-green{
+      padding: 5px 190px 0px 2px;
+    }
+    .extra-space-align{
+      padding-right: 100px !important;
+    }
+    .extra-button-space{
+      margin-left: 4px !important;
+    }
+  }
+
+.form-row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}  
+.form-group{
+    margin-bottom: 1rem;
+}
+.toggle-on{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    opacity: 0.75;
+}

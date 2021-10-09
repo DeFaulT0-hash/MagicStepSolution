@@ -1,0 +1,4 @@
+.add-products{
+  display: flex;
+  flex-direction: row;
+}
