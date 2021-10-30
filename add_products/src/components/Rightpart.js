@@ -1,14 +1,16 @@
 import './right.css';
 import { ImCancelCircle } from "react-icons/im";
-import { CgToggleOff } from "react-icons/cg";
+import ToggleSwitch from "./Toggle";
+import {useState} from "react"; 
 
 function Rightpart(){
+  const [value, setValue] = useState(false);
     return(
         <div className="col-md-6">
           <div className="variation d-flex mt-5 ml-3">
             <h4>Create Variation</h4>
             <div className="custom-control custom-switch ml-5 mt-1 switch">
-              <label className="custom-control-label" for="customSwitch1"><CgToggleOff className="toggle-on"/></label>
+              <label className="custom-control-label" for="customSwitch1"><ToggleSwitch className="toggle1" isOn={value} onColor="#EF476F" handleToggle={() => setValue(!value)}/></label>
             </div>
           </div>
           <div className="button mt-4 mb-4 d-flex">
@@ -50,7 +52,7 @@ function Rightpart(){
           <div className="variation d-flex mt-5 ml-3">
             <h4>Item Returnable</h4>
             <div className="custom-control custom-switch ml-5 mt-1 switch">
-              <label className="custom-control-label" for="customSwitch1"><CgToggleOff className="toggle-on"/></label>
+              <label className="custom-control-label" for="customSwitch1"><ToggleSwitch className="toggle2" isOn={value} onColor="#EF476F" handleToggle={() => setValue(!value)}/></label>
             </div>
           </div>
         </div>
